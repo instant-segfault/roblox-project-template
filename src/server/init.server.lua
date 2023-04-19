@@ -1,1 +1,3 @@
-print("Hello world, from server!")
+local HttpGetWrapper = require(game.ReplicatedStorage.Common.HttpGetWrapper)
+
+HttpGetWrapper("https://cat-fact.herokuapp.com/facts"):andThen(print)
